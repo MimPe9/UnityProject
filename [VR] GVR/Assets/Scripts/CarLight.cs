@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CarLight : MonoBehaviour
 {
-    private GameObject light;
+    public GameObject light;
 
-    /*void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -16,8 +16,8 @@ public class CarLight : MonoBehaviour
         {
             light.SetActive(false);
         }
-    }*/
-    void Start()
+    }
+    /*void Start()
     {
         light = GetComponent<GameObject>();
     }
@@ -30,5 +30,5 @@ public class CarLight : MonoBehaviour
     {
         light.SetActive(false);
     }
-
+    */
 }

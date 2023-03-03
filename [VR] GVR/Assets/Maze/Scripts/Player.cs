@@ -20,4 +20,12 @@ public class Player : MonoBehaviour
     {
         instance.transform.position = new Vector3(position.x, 1f, position.z);
     }
+
+    public static void SetPositionCar(Vector3 position)
+    {
+        instance.transform.position = new Vector3(position.x, 0.65f, position.z);
+    }
+
+
+
 }
