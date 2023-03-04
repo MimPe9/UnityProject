@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
-    private static Player instance;
+    private static Player1 instance;
 
     private void Start()
     {
@@ -20,12 +20,4 @@ public class Player : MonoBehaviour
     {
         instance.transform.position = new Vector3(position.x, 1f, position.z);
     }
-
-    public static void SetPositionCar(Vector3 position)
-    {
-        instance.transform.position = new Vector3(position.x, 0.65f, position.z);
-    }
-
-
-
 }

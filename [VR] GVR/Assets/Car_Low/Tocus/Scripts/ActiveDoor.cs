@@ -14,7 +14,10 @@ public class ActiveDoor : MonoBehaviour
     // Update is called once per frame
    public void ActiveObj()
     {
-        _anim.SetBool("isOpened", _isOpened);
         _isOpened = !_isOpened;
+        if (_isOpened)
+            _anim.SetBool("isOpened", true);
+        else
+            _anim.SetBool("isOpened", false); ;
     }
 }

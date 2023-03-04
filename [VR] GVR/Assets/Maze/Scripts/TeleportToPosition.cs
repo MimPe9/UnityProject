@@ -8,4 +8,8 @@ public class TeleportToPosition : MonoBehaviour
     {
         Player.SetPosition(transform.position);
     }
+    public void MovePlayerCar()
+    {
+        Player.SetPositionCar(transform.position);
+    }
 }
